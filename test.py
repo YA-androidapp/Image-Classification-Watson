@@ -1,8 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 # pip install --upgrade "watson-developer-cloud>=2.4.1"
 
 from watson_developer_cloud import VisualRecognitionV3
+import configparser
 import json
+
+# 設定ファイル読み込み
+inifile = configparser.ConfigParser()
+inifile.read('./.key', 'UTF-8')
+iam_api_key = inifile.get('watson', 'iam_api_key')
 
 # Authentication
 visual_recognition = VisualRecognitionV3(
