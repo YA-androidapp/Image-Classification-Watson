@@ -1,4 +1,8 @@
 .key
 *.png
 
+test
 watson
+
+result-test-*.txt
+
