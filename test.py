@@ -50,7 +50,7 @@ def classify(path):
                 images_file,
                 threshold='0.83',
                 classifier_ids='DefaultCustomModel_1970291170').get_result()
-        print(json.dumps(classes, indent=2))
+        # print(json.dumps(classes, indent=2))
         # TODO: check
         # {
         #   "images": [
